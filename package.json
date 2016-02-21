@@ -1,0 +1,38 @@
+{
+  "name": "gl-scene-lambert-material",
+  "version": "1.0.0",
+  "description": "lambert material for 3d scenes using stack.gl",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freeman-lab/gl-scene-lambert-material.git"
+  },
+  "keywords": [
+    "lambert",
+    "3d",
+    "shader",
+    "webgl",
+    "stackgl"
+  ],
+  "author": "freeman-lab",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freeman-lab/gl-scene-lambert-material/issues"
+  },
+  "browserify": {
+    "transform": [
+      "glslify"
+    ]
+  },
+  "homepage": "https://github.com/freeman-lab/gl-scene-lambert-material#readme",
+  "dependencies": {
+    "glsl-scene-light": "^1.0.0",
+    "glsl-scene-light-attenuation": "^1.0.0",
+    "glsl-scene-light-direction": "^1.0.0",
+    "glsl-diffuse-oren-nayar": "^1.0.2",
+    "glslify": "^5.0.2"
+  }
+}
