@@ -16,14 +16,14 @@ struct Style {
   float roughness;
 };
 
-uniform Light lighting[{{ LIGHTCOUNT }}];
+uniform Light lighting[LIGHTCOUNT];
 uniform Style style;
 
 void main() {
   vec3 viewpoint = eye - vposition;
   vec3 result = vec3(0.0);
 
-  for (int i = 0; i < {{ LIGHTCOUNT }}; ++i) {
+  for (int i = 0; i < LIGHTCOUNT; ++i) {
     if (lighting[i].visible) {
       vec3 dir = direction(lighting[i], vposition);
       float attn = attenuation(lighting[i], dir);
