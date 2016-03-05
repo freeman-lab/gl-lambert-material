@@ -28,6 +28,7 @@ void main() {
       vec3 dir = direction(lighting[i], vposition);
       float attn = attenuation(lighting[i], dir);
       float diffuse = orenn(normalize(dir), normalize(viewpoint), vnormal, style.roughness, 0.7);
+      diffuse = ( diffuse < 0.0 || 0.0 < diffuse || diffuse == 0.0 ) ? diffuse : 0.0;
       vec3 ambient = lighting[i].ambient * style.ambient;
       vec3 combined = diffuse * style.diffuse;
       result += ambient + attn * combined * lighting[i].color * lighting[i].intensity;
