@@ -30,9 +30,10 @@ void main() {
       float diffuse = orenn(normalize(dir), normalize(viewpoint), vnormal, style.roughness, 0.7);
       vec3 ambient = lighting[i].ambient * style.ambient;
       vec3 combined = diffuse * style.diffuse;
-      result += style.emissive + ambient + attn * combined * lighting[i].color * lighting[i].intensity;
+      result += ambient + attn * combined * lighting[i].color * lighting[i].intensity;
     }
   }
+  result = result + style.emissive;
 
   gl_FragColor = vec4(result, 1);
 }
