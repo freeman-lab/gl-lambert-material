@@ -4,9 +4,9 @@ varying vec3 vposition;
 varying vec3 vnormal;
 uniform vec3 eye;
 
-#pragma glslify: Light = require('glsl-scene-light')
-#pragma glslify: attenuation = require('glsl-scene-light-attenuation')
-#pragma glslify: direction = require('glsl-scene-light-direction')
+#pragma glslify: Light = require('glsl-light')
+#pragma glslify: attenuation = require('glsl-light-attenuation')
+#pragma glslify: direction = require('glsl-light-direction')
 #pragma glslify: orenn = require('glsl-diffuse-oren-nayar')
 
 struct Style {
