@@ -4,7 +4,7 @@
   "description": "lambert material for 3d scenes using stack.gl",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "browserify test.js | testron | tap-spec"
   },
   "repository": {
     "type": "git",
