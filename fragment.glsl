@@ -14,6 +14,7 @@ struct Style {
   vec3 ambient;
   vec3 diffuse;
   float roughness;
+  float albedo;
 };
 
 uniform Light lighting[LIGHTCOUNT];
@@ -27,7 +28,7 @@ void main() {
     if (lighting[i].visible) {
       vec3 dir = direction(lighting[i], vposition);
       float attn = attenuation(lighting[i], dir);
-      float diffuse = orenn(normalize(dir), normalize(viewpoint), vnormal, style.roughness, 0.7);
+      float diffuse = orenn(normalize(dir), normalize(viewpoint), vnormal, style.roughness, style.albedo);
       diffuse = ( diffuse < 0.0 || 0.0 < diffuse || diffuse == 0.0 ) ? diffuse : 0.0;
       vec3 ambient = lighting[i].ambient * style.ambient;
       vec3 combined = diffuse * style.diffuse;
