@@ -1,5 +1,5 @@
 {
-  "name": "gl-lambert-material",
+  "name": "gl-material-lambert",
   "version": "1.0.1",
   "description": "lambert material for 3d scenes using stack.gl",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/freeman-lab/gl-lambert-material.git"
+    "url": "git+https://github.com/freeman-lab/gl-material-lambert.git"
   },
   "keywords": [
     "lambert",
@@ -20,14 +20,14 @@
   "author": "freeman-lab",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/freeman-lab/gl-lambert-material/issues"
+    "url": "https://github.com/freeman-lab/gl-material-lambert/issues"
   },
   "browserify": {
     "transform": [
       "glslify"
     ]
   },
-  "homepage": "https://github.com/freeman-lab/gl-lambert-material#readme",
+  "homepage": "https://github.com/freeman-lab/gl-material-lambert#readme",
   "dependencies": {
     "glsl-light": "^1.0.0",
     "glsl-light-attenuation": "^1.0.0",
