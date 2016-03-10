@@ -1,3 +1,3 @@
 var material = require('./index')
 var test = require('tape')
-require('gl-test-material')(test, material, {LIGHTCOUNT: 5})
+require('gl-material-test')(test, material, {LIGHTCOUNT: 5})
