@@ -47,7 +47,7 @@ Or just get the fragment shader for use elsewhere
 var fragment = require('gl-lambert-material').fragment
 ```
 
-[npm-image]: https://img.shields.io/badge/npm-v1.0.0-lightgray.svg?style=flat-square
+[npm-image]: https://img.shields.io/badge/npm-v1.0.1-lightgray.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/gl-lambert-material
 [material-image]: https://img.shields.io/badge/gl--material-lambert-lightgray.svg?style=flat-square
 [material-url]: https://github.com/freeman-lab/gl-material
