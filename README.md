@@ -24,7 +24,7 @@ As defined in [`gl-material`](https://github.com/freeman-lab/gl-material), a `ma
 
 > `albedo` : `float` intensity of light reflection, 0 for dark, 1 for bright, default `0.7`
 
-![image](image/sample.png)
+[![image](image/sample.png)](http://gl-lambert-material.surge.sh/)
 
 ## install
 
