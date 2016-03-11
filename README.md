@@ -1,9 +1,9 @@
 # gl-lambert-material
 
 [![NPM version][npm-image]][npm-url]
-![material][material-image]
 ![experimental][experimental-image]
 [![js-standard-style][standard-image]][standard-url]
+![material][material-image]
 
 Lambert material for 3d rendering.
 
