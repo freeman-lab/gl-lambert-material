@@ -9,8 +9,6 @@ Lambert material for 3d rendering.
 
 As defined in [`gl-material`](https://github.com/freeman-lab/gl-material), a `material` is a fragment shader and a set of styles with defaults. This material reflects lighting to produce a soft, diffuse appearence using the [`glsl-diffuse-oren-nayar`](https://github.com/stackgl/glsl-diffuse-oren-nayar) shader component. 
 
-![image](image/lambert.png)
-
 --------------------------------------
 > `STYLE PARAMETERS`
 
@@ -23,6 +21,8 @@ As defined in [`gl-material`](https://github.com/freeman-lab/gl-material), a `ma
 > `roughness` : `float` surface roughness, 0 for smooth, 1 for matte, default `0.7`
 
 > `albedo` : `float` intensity of light reflection, 0 for dark, 1 for bright, default `0.7`
+
+![image](image/lambert.png)
 
 ## install
 
