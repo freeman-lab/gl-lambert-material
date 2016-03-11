@@ -1,6 +1,6 @@
 {
   "name": "gl-lambert-material",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "lambert material for 3d scenes using stack.gl",
   "main": "index.js",
   "scripts": {
