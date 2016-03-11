@@ -1,8 +1,15 @@
 # gl-lambert-material
 
+[![NPM version][npm-image]][npm-url]
+![material][material-image]
+![experimental][experimental-image]
+[![js-standard-style][standard-image]][standard-url]
+
 Normal material for 3d rendering.
 
 As defined in [`gl-material`](https://github.com/freeman-lab/gl-material), a `material` is a fragment shader and a set of styles with defaults. This material reflects lighting to produce a soft, diffuse appearence using the [`glsl-diffuse-oren-nayar`](https://github.com/stackgl/glsl-diffuse-oren-nayar) shader component. 
+
+![image][image/lambert.png]
 
 --------------------------------------
 > `STYLE PARAMETERS`
@@ -37,3 +44,10 @@ Or just get the fragment shader for use elsewhere
 ```javascript
 var fragment = require('gl-lambert-material').fragment
 ```
+
+[npm-image]: https://img.shields.io/badge/npm-v1.0.0-lightgray.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/gl-lambert-material
+[material-image]: https://img.shields.io/badge/gl-material-lambert-lightgray.svg?style=flat-square
+[standard-image]: https://img.shields.io/badge/code%20style-standard-lightgray.svg?style=flat-square
+[standard-url]: https://github.com/feross/standard
+[experimental-image]: https://img.shields.io/badge/stability-experimental-lightgray.svg?style=flat-square
