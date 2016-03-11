@@ -1,8 +1,21 @@
 # gl-lambert-material
 
-Lambert material for 3d rendering.
+Normal material for 3d rendering.
 
-A `material` is a fragment shader and a set of styles with defaults, as defined in [`gl-material`](https://github.com/freeman-lab/gl-material).
+As defined in [`gl-material`](https://github.com/freeman-lab/gl-material), a `material` is a fragment shader and a set of styles with defaults. This lit material provides a soft, diffuse appearence using the [`glsl-diffuse-oren-nayar`](https://github.com/stackgl/glsl-diffuse-oren-nayar) shader component. 
+
+--------------------------------------
+> style parameters
+
+> `emissive` : `vec3` emissive color (unaffected by light), default `[0.0, 0.0, 0.0]`
+
+> `ambient` : `vec3` ambient color component, default `[0.2, 0.2, 0.2]`
+
+> `diffuse` : `vec3` diffuse color component, default `[0.8, 0.8, 0.8]`
+
+> `roughness` : `float` surface roughness, 0 for smooth, 1 for matte, default `0.7`
+
+> `albedo` : `float` intensity of light reflection, 0 for dark, 1 for bright, default `0.7`
 
 ## install
 
