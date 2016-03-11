@@ -25,7 +25,7 @@ npm install gl-lambert-material
 
 ## usage
 
-Use with `gl-material` to generate a compiled shader, given a `gl` context and constants to replace
+Use with [`gl-material`](https://github.com/freeman-lab/gl-material) to generate a compiled shader, given a `gl` context and constants to replace
 
 ```javascript
 var lambert = require('gl-lambert-material')
