@@ -31,9 +31,9 @@
   },
   "homepage": "https://github.com/freeman-lab/gl-lambert-material#readme",
   "dependencies": {
-    "glsl-light": "^1.0.0",
-    "glsl-light-attenuation": "^1.0.0",
-    "glsl-light-direction": "^1.0.0",
+    "glsl-light": "^2.0.0",
+    "glsl-light-attenuation": "^2.0.0",
+    "glsl-light-direction": "^2.0.0",
     "glsl-diffuse-oren-nayar": "^1.0.2",
     "glslify": "^5.0.2"
   },
